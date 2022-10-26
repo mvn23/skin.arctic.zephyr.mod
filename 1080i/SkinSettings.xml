@@ -167,6 +167,14 @@
                         <label>$LOCALIZE[31658]</label>
                         <onright>13200</onright>
                     </control>
+                    <control type="togglebutton" id="9110" description="Colors">
+                        <textoffsetx>30</textoffsetx>
+                        <usealttexture>ControlGroup(9100).HasFocus(9110)</usealttexture>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <include>DefSettingsButtonGradientSkinSettings</include>
+                        <label>$LOCALIZE[31300]</label>
+                        <onright>9600</onright>
+                    </control>
                     <control type="togglebutton" id="9103" description="OSD">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9103)</usealttexture>
@@ -182,14 +190,6 @@
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>$LOCALIZE[31298]</label>
                         <onright>13100</onright>
-                    </control>
-                    <control type="togglebutton" id="9110" description="Colors">
-                        <textoffsetx>30</textoffsetx>
-                        <usealttexture>ControlGroup(9100).HasFocus(9110)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
-                        <include>DefSettingsButtonGradientSkinSettings</include>
-                        <label>$LOCALIZE[31300]</label>
-                        <onright>9600</onright>
                     </control>
                     <control type="togglebutton" id="9107" description="Extras">
                         <textoffsetx>30</textoffsetx>
@@ -497,6 +497,14 @@
                             <selected>Skin.HasSetting(homemenu.hide.lines)</selected>
                             <onclick>Skin.ToggleSetting(homemenu.hide.lines)</onclick>
                             <enable>$EXP[HomeIsModernMultiWidgets] | [$EXP[HomeIsVerticalMultiWidgets] + !Skin.HasSetting(homemenu.vertical.noslide)]</enable>
+                        </control>
+                        <control type="radiobutton" id="9822">
+                            <width>1360</width>
+                            <visible>ControlGroup(9100).HasFocus(9101)</visible>
+                            <include>DefSettingsButtonGradientSkinSettings</include>
+                            <label>$LOCALIZE[31689]</label>
+                            <selected>Skin.HasSetting(hide.recording.info)</selected>
+                            <onclick>Skin.ToggleSetting(hide.recording.info)</onclick>
                         </control>
                         <control type="grouplist" id="9818">
                             <visible>ControlGroup(9100).HasFocus(9101)</visible>
@@ -1142,6 +1150,15 @@
                             <onclick condition="Skin.HasSetting(osd.usethemeNewOSD)">Skin.Reset(osd.usethemeNewOSD)</onclick>
                             <onclick condition="Skin.HasSetting(osd.usethemeNewOSDSide)">Skin.Reset(osd.usethemeNewOSDSide)</onclick>
                         </control>
+                        <control type="button" id="9240" description="Show detailed info on start">
+                            <width>1360</width>
+                            <visible>ControlGroup(9100).HasFocus(9103)</visible>
+                            <include>DefSettingsButtonGradientSkinSettings</include>
+                            <label>31677</label>
+                            <label2>$VAR[Label_OSD_Info]</label2>
+                            <onclick>SetProperty(includesetting,OSD_Info,home)</onclick>
+                            <onclick>ActivateWindow(1248)</onclick>
+                        </control>
                         <control type="radiobutton" id="9210" description="Show detailed info on pause">
                             <width>1360</width>
                             <visible>ControlGroup(9100).HasFocus(9103)</visible>
@@ -1517,6 +1534,32 @@
                         <ondown>9600</ondown>
                         <orientation>vertical</orientation>
                         <visible allowhiddenfocus="true">ControlGroup(9100).HasFocus(9110)</visible>
+                        <control type="grouplist" id="9050">
+                            <visible>ControlGroup(9100).HasFocus(9110)</visible>
+                            <orientation>horizontal</orientation>
+                            <enable>false</enable>
+                            <height>70</height>
+                            <control type="button">
+                                <enable>false</enable>
+                                <textoffsetx>30</textoffsetx>
+                                <font>Button</font>
+                                <align>left</align>
+                                <width>1310</width>
+                                <disabledcolor>PanelWhite30</disabledcolor>
+                                <height>70</height>
+                                <label>$LOCALIZE[31679]</label>
+                            </control>
+                        </control>
+                        <control type="button" id="9051" description="Set Custom Colour">
+                            <width>1360</width>
+                            <visible>ControlGroup(9100).HasFocus(9110)</visible>
+                            <include>DefSettingsButtonGradientSkinSettings</include>
+                            <label>$LOCALIZE[31680]</label>
+                            <label2>$VAR[Label_ColorSetting]</label2>
+                            <onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
+                            <onclick>SetProperty(includesetting,ColorSettings,home)</onclick>
+                            <onclick>ActivateWindow(1248)</onclick>
+                        </control>
                         <control type="grouplist" id="9650">
                             <visible>ControlGroup(9100).HasFocus(9110)</visible>
                             <orientation>horizontal</orientation>
@@ -1532,6 +1575,14 @@
                                 <height>70</height>
                                 <label>31126</label>
                             </control>
+                        </control>
+                        <control type="button" id="9052">
+                            <width>1360</width>
+                            <visible>ControlGroup(9100).HasFocus(9110)</visible>
+                            <include>DefSettingsButtonGradientSkinSettings</include>
+                            <label>$LOCALIZE[31687]</label>
+                            <label2>$INFO[Skin.String(color.preset.name.own)]</label2>
+                            <onclick>ActivateWindow(1261)</onclick>
                         </control>
                         <control type="radiobutton" id="9651" description="Set Custom Colour">
                             <width>1360</width>
@@ -1870,13 +1921,21 @@
                             <label2>$VAR[Label_StudioIcons]</label2>
                             <onclick>RunScript(script.image.resource.select,property=studio.logos&amp;type=resource.images.studios)</onclick>
                         </control>
-                        <control type="button" id="9585" description="Studios">
+                        <control type="button" id="9585" description="Record Labels">
                             <width>1360</width>
                             <visible>ControlGroup(9100).HasFocus(9111)</visible>
                             <include>DefSettingsButtonGradientSkinSettings</include>
                             <label>31350</label>
                             <label2>$VAR[Label_RecordLabelIcons]</label2>
                             <onclick>RunScript(script.image.resource.select,property=recordlabel.logos&amp;type=resource.images.recordlabels)</onclick>
+                        </control>
+                        <control type="button" id="95851" description="GameIcons">
+                            <width>1360</width>
+                            <visible>ControlGroup(9100).HasFocus(9111)</visible>
+                            <include>DefSettingsButtonGradientSkinSettings</include>
+                            <label>31694</label>
+                            <label2>$VAR[Label_GameIcons]</label2>
+                            <onclick>RunScript(script.image.resource.select,property=game.logos&amp;type=resource.images.gamestudios)</onclick>
                         </control>
                     </control>
 
@@ -2089,6 +2148,11 @@
                             <param name="id" value="11022"/>
                             <param name="visible" value="ControlGroup(9100).HasFocus(9113)"/>
                             <param name="addonname" value="script.module.animated_artwork"/>
+                        </include>
+                        <include content="DefSkinAddons">
+                            <param name="id" value="11023"/>
+                            <param name="visible" value="ControlGroup(9100).HasFocus(9113)"/>
+                            <param name="addonname" value="script.module.pvr.artwork"/>
                         </include>
                     </control>
 
@@ -2466,6 +2530,15 @@
                             <label>31032</label>
                             <selected>Skin.HasSetting(dontuselandscapemovies)</selected>
                             <onclick>Skin.ToggleSetting(dontuselandscapemovies)</onclick>
+                        </control>
+                        <control type="radiobutton" id="11400">
+                            <width>1360</width>
+                            <visible>ControlGroup(9100).HasFocus(9106)</visible>
+                            <include>DefSettingsButtonGradientSkinSettings</include>
+                            <label>$LOCALIZE[31675]</label>
+                            <selected>Skin.HasSetting(Skin_enablePvrArtwork)</selected>
+                            <onclick>Skin.ToggleSetting(Skin_enablePvrArtwork)</onclick>
+                            <visible>System.AddonIsEnabled(script.module.pvr.artwork)</visible>
                         </control>
 
                         <!-- Indicators -->
@@ -2982,7 +3055,6 @@
                             <onclick>Skin.ToggleSetting(lock.skinsettings)</onclick>
                             <enable>!Skin.HasSetting(disable.startup.window)</enable>
                         </control>
-                        
                         <control type="grouplist" id="12100">
                             <visible>ControlGroup(9100).HasFocus(9107)</visible>
                             <orientation>horizontal</orientation>

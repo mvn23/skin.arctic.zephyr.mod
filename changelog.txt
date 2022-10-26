@@ -1,3 +1,18 @@
+[B]1.1.72[/B]
+Added color presets
+Fixed issues with now playing widget
+Fixed aspect ratio for some icons
+Changed home menu icon size
+Added option to show info for a few seconds, when video starts
+Improvements to dialog subtitles
+
+[B]1.1.71[/B]
+Added option to hide ratings in list views
+CjK font added (!thx kuroehanako)
+Added support for extended pvr artwork (!thx kalle2000)
+Minor adjustments
+Language updates
+
 [B]1.1.70[/B]
 Improved fsk ratings (!thx Peiren85)
 Fixed issues
