@@ -104,7 +104,7 @@
                 <onleft>11</onleft>
                 <font>Button</font>
                 <textcolor>Black70</textcolor>
-                <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
                 <onclick>Close</onclick>
                 <onright>Close</onright>
             </control>

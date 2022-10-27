@@ -173,21 +173,21 @@
                         <control type="image" id="2">
                             <width>92</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image" id="2">
                             <width>138</width>
                             <left>93</left>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image" id="2">
                             <left>232</left>
                             <width>226</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image">
@@ -230,21 +230,21 @@
                         <control type="image" id="2">
                             <width>92</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image" id="2">
                             <width>138</width>
                             <left>93</left>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image" id="2">
                             <left>232</left>
                             <width>226</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image">
@@ -256,7 +256,7 @@
                         <control type="image">
                             <width>100%</width>
                             <height>69</height>
-                            <texture border="5" colordiffuse="$VAR[ColorHighlightOtherBar]">common/gradient-box-wide.png</texture>
+                            <texture border="6" colordiffuse="$VAR[ColorHighlightOtherBar]">common/gradient-box-wide.png</texture>
                             <visible>!Control.HasFocus(11) + !Control.HasFocus(11441)</visible>
                         </control>
                         <control type="image">
@@ -299,7 +299,7 @@
                         <control type="image" id="2">
                             <width>259</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image" id="2">
@@ -342,7 +342,7 @@
                         <control type="image" id="2">
                             <width>259</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <visible>Control.HasFocus(11) | Control.HasFocus(11441)</visible>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
@@ -350,7 +350,7 @@
                             <width>258</width>
                             <height>69</height>
                             <visible>!Control.HasFocus(11) + !Control.HasFocus(11441)</visible>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                         </control>
                         <control type="image" id="2">
                             <width>256</width>
@@ -415,7 +415,7 @@
                     <top>9</top>
                     <right>0</right>
                     <bottom>0</bottom>
-                    <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                    <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
                     <visible>!Skin.HasSetting(thumbnails.white)</visible>
                 </control>
             </control>

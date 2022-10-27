@@ -33,8 +33,8 @@
                     <width>320</width>
                     <label>107</label>
                     <font>Button</font>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <onclick>Skin.ResetSettings</onclick>
                     <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
                     <onclick>close</onclick>
@@ -44,8 +44,8 @@
                     <width>320</width>
                     <label>106</label>
                     <font>Button</font>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <onclick>close</onclick>
                 </control>
             </control>

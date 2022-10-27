@@ -19,7 +19,7 @@
                 <top>220</top>
                 <width>1760</width>
                 <height>636</height>
-                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                <texture border="6" colordiffuse="Panel">common/box.png</texture>
             </control>
             <!--Header-->
             <control type="group">
@@ -204,13 +204,13 @@
                 <control type="image">
                     <width>76</width>
                     <height>66</height>
-                    <texture border="5">common/box.png</texture>
+                    <texture border="6">common/box.png</texture>
                     <colordiffuse>$INFO[Window.Property(colorstring)]</colordiffuse>
                 </control>
                 <control type="image">
                     <width>76</width>
                     <height>66</height>
-                    <texture border="5" diffuse="common/box.png">p$INFO[Container(3110).ListItem.Icon]</texture>
+                    <texture border="6" diffuse="common/box.png">p$INFO[Container(3110).ListItem.Icon]</texture>
                 </control>
             </control>
             <control type="label">
@@ -242,7 +242,7 @@
                     <control type="image">
                         <width>92%</width>
                         <height>92%</height>
-                        <texture border="5">$INFO[ListItem.Icon]</texture>
+                        <texture border="6">$INFO[ListItem.Icon]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="38" width="41" condition="!String.IsEqual(Window.Property(palettename),basic) + !String.Contains(Window.Property(palettename),material-design)">
@@ -253,12 +253,12 @@
                             <bottom>2</bottom>
                             <width>41</width>
                             <height>38</height>
-                            <texture border="5" colordiffuse="Panel">common/white.png</texture>
+                            <texture border="6" colordiffuse="Panel">common/white.png</texture>
                         </control>
                         <control type="image">
                             <width>37</width>
                             <height>34</height>
-                            <texture border="5">$INFO[ListItem.Icon]</texture>
+                            <texture border="6">$INFO[ListItem.Icon]</texture>
                         </control>
                     </control>
                 </focusedlayout>
@@ -266,7 +266,7 @@
                     <control type="image">
                         <width>97%</width>
                         <height>92%</height>
-                        <texture border="5">$INFO[ListItem.Icon]</texture>
+                        <texture border="6">$INFO[ListItem.Icon]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="38" width="91" condition="String.IsEqual(Window.Property(palettename),basic)">
@@ -277,12 +277,12 @@
                             <bottom>2</bottom>
                             <width>91</width>
                             <height>38</height>
-                            <texture border="5" colordiffuse="Panel">common/white.png</texture>
+                            <texture border="6" colordiffuse="Panel">common/white.png</texture>
                         </control>
                         <control type="image">
                             <width>87</width>
                             <height>34</height>
-                            <texture border="5">$INFO[ListItem.Icon]</texture>
+                            <texture border="6">$INFO[ListItem.Icon]</texture>
                         </control>
                     </control>
                 </focusedlayout>
@@ -290,7 +290,7 @@
                     <control type="image">
                         <width>97%</width>
                         <height>92%</height>
-                        <texture border="5">$INFO[ListItem.Icon]</texture>
+                        <texture border="6">$INFO[ListItem.Icon]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="38" width="91" condition="String.IsEqual(Window.Property(palettename),material-design)">
@@ -301,12 +301,12 @@
                             <bottom>2</bottom>
                             <width>91</width>
                             <height>38</height>
-                            <texture border="5" colordiffuse="Panel">common/white.png</texture>
+                            <texture border="6" colordiffuse="Panel">common/white.png</texture>
                         </control>
                         <control type="image">
                             <width>87</width>
                             <height>34</height>
-                            <texture border="5">$INFO[ListItem.Icon]</texture>
+                            <texture border="6">$INFO[ListItem.Icon]</texture>
                         </control>
                     </control>
                 </focusedlayout>

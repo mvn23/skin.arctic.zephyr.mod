@@ -501,7 +501,7 @@
                     <top>-119</top>
                     <right>0</right>
                     <bottom>71</bottom>
-                    <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                    <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
                 </control>
                 <control type="group">
                     <left>-7</left>
@@ -509,12 +509,12 @@
                     <right>-7</right>
                     <bottom>64</bottom>
                     <control type="image">
-                        <texture border="5" colordiffuse="$VAR[ColorSquares]">common/box.png</texture>
+                        <texture border="6" colordiffuse="$VAR[ColorSquares]">common/box.png</texture>
                         <animation condition="Control.HasFocus($PARAM[controlid])" effect="fade" end="100" start="0" time="150">Conditional</animation>
                         <animation condition="!Control.HasFocus($PARAM[controlid])" effect="fade" end="0" start="100" time="100">Conditional</animation>
                     </control>
                     <control type="image">
-                        <texture border="5" colordiffuse="$VAR[ColorHighlightSelectbox2]">common/gradient-box-wide.png</texture>
+                        <texture border="6" colordiffuse="$VAR[ColorHighlightSelectbox2]">common/gradient-box-wide.png</texture>
                         <animation condition="Control.HasFocus($PARAM[controlid])" effect="fade" end="100" start="0" time="150">Conditional</animation>
                         <animation condition="!Control.HasFocus($PARAM[controlid])" effect="fade" end="0" start="100" time="100">Conditional</animation>
                     </control>
@@ -524,7 +524,7 @@
                     <width>1268</width>
                     <left>1</left>
                     <top>-118</top>
-                    <texture colordiffuse="Background" border="4">common/box.png</texture>
+                    <texture colordiffuse="Background" border="6">common/box.png</texture>
                 </control>
                 <include content="ListInfoUpdating">
                     <param name="visi" value="$PARAM[visi]"/>

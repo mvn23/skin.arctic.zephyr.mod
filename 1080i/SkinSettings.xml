@@ -46,7 +46,7 @@
                     <left>450</left>
                     <height>68</height>
                     <width>1310</width>
-                    <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="5">common/white.png</texture>
+                    <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="6">common/white.png</texture>
                     <visible>ControlGroup(9900).HasFocus()</visible>
                 </control>
                 <control type="image">
@@ -54,7 +54,7 @@
                     <left>450</left>
                     <height>68</height>
                     <width>1310</width>
-                    <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</texture>
+                    <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</texture>
                     <visible>ControlGroup(9900).HasFocus()</visible>
                 </control>
                 <include content="Def_Gradient_Settings_Image">
@@ -130,7 +130,7 @@
                     <control type="togglebutton" id="9108" description="AZR">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9108)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>$LOCALIZE[31018]</label>
                         <onright>9900</onright>
@@ -138,7 +138,7 @@
                     <control type="togglebutton" id="9101" description="Home">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9101)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>10000</label>
                         <onright>9200</onright>
@@ -146,7 +146,7 @@
                     <control type="togglebutton" id="9102" description="Background">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9102)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>31110</label>
                         <onright>9300</onright>
@@ -154,7 +154,7 @@
                     <control type="togglebutton" id="9106" description="Furniture">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9106)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>31152</label>
                         <onright>10000</onright>
@@ -162,7 +162,7 @@
                     <control type="togglebutton" id="9115" description="VIDEO MUSIC INFO">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9115)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>$LOCALIZE[31658]</label>
                         <onright>13200</onright>
@@ -170,7 +170,7 @@
                     <control type="togglebutton" id="9110" description="Colors">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9110)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>$LOCALIZE[31300]</label>
                         <onright>9600</onright>
@@ -178,7 +178,7 @@
                     <control type="togglebutton" id="9103" description="OSD">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9103)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>31270</label>
                         <onright>9400</onright>
@@ -186,7 +186,7 @@
                     <control type="togglebutton" id="9109" description="VIDEO MUSIC INFO">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9109)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>$LOCALIZE[31298]</label>
                         <onright>13100</onright>
@@ -194,7 +194,7 @@
                     <control type="togglebutton" id="9107" description="Extras">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9107)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>31169</label>
                         <onright>12000</onright>
@@ -202,7 +202,7 @@
                     <control type="togglebutton" id="9111" description="Resources">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9111)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>$LOCALIZE[31020]</label>
                         <onright>9800</onright>
@@ -210,7 +210,7 @@
                     <control type="togglebutton" id="9113" description="Supported Addons">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9113)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>31019</label>
                         <onright>11000</onright>
@@ -218,7 +218,7 @@
                     <control type="togglebutton" id="9112" description="Backup / Restore">
                         <textoffsetx>30</textoffsetx>
                         <usealttexture>ControlGroup(9100).HasFocus(9112)</usealttexture>
-                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturenofocus>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</alttexturenofocus>
                         <include>DefSettingsButtonGradientSkinSettings</include>
                         <label>$LOCALIZE[31001]</label>
                         <onright>9700</onright>

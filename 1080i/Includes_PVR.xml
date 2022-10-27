@@ -164,7 +164,7 @@
                     <top>10</top>
                     <right>12</right>
                     <bottom>10</bottom>
-                    <texture colordiffuse="Fallback" border="4" background="true">common/diffuse_box.png</texture>
+                    <texture colordiffuse="Fallback" border="6" background="true">common/diffuse_box.png</texture>
                 </control>
                 <control type="videowindow">
                     <left>10</left>
@@ -202,7 +202,7 @@
                     <top>10</top>
                     <right>10</right>
                     <bottom>10</bottom>
-                    <texture border="4" colordiffuse="Box2">common/box21.png</texture>
+                    <texture border="6" colordiffuse="Box2">common/box21.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1076,7 +1076,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                            <texture colordiffuse="Dark4" border="6">common/box.png</texture>
                         </control>
                         <control type="group">
                             <visible>Window.IsVisible(MyPVRChannels.xml)</visible>
@@ -1223,7 +1223,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Box2" diffuse="diffuse/wall-fanart.png" border="4" background="true">common/box21.png</texture>
+                            <texture colordiffuse="Box2" diffuse="diffuse/wall-fanart.png" border="6" background="true">common/box21.png</texture>
                             <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             <visible>!String.IsEqual(ListItem.Label,..) </visible>
                         </control>
@@ -1234,7 +1234,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Dark1" border="5">common/box.png</texture>
+                            <texture colordiffuse="Dark1" border="6">common/box.png</texture>
                         </control>
                         <control type="group">
                             <visible>Window.IsVisible(MyPVRChannels.xml)</visible>
@@ -1379,7 +1379,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Box2" diffuse="diffuse/wall-fanart.png" border="4" background="true">common/box21.png</texture>
+                            <texture colordiffuse="Box2" diffuse="diffuse/wall-fanart.png" border="6" background="true">common/box21.png</texture>
                             <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             <visible>!String.IsEqual(ListItem.Label,..) </visible>
                         </control>
@@ -1422,7 +1422,7 @@
                         <top>10</top>
                         <right>10</right>
                         <bottom>10</bottom>
-                        <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                        <texture colordiffuse="Dark4" border="6">common/box.png</texture>
                     </control>
                     <control type="image">
                         <right>30</right>
@@ -1479,7 +1479,7 @@
                         <top>10</top>
                         <right>10</right>
                         <bottom>10</bottom>
-                        <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                        <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
                         <visible>!Skin.HasSetting(thumbnails.white)</visible>
                     </control>
                 </itemlayout>
@@ -1489,7 +1489,7 @@
                         <top>10</top>
                         <right>10</right>
                         <bottom>10</bottom>
-                        <texture colordiffuse="Dark1" border="5">common/box.png</texture>
+                        <texture colordiffuse="Dark1" border="6">common/box.png</texture>
                     </control>
                     <control type="image">
                         <right>30</right>
@@ -1547,7 +1547,7 @@
                         <top>10</top>
                         <right>10</right>
                         <bottom>10</bottom>
-                        <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                        <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
                         <visible>!Skin.HasSetting(thumbnails.white)</visible>
                     </control>
                 </focusedlayout>
@@ -1562,7 +1562,7 @@
                     <top>10</top>
                     <right>10</right>
                     <bottom>10</bottom>
-                    <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                    <texture colordiffuse="Dark4" border="6">common/box.png</texture>
                 </control>
                 <control type="image">
                     <fadetime>PosterFanartFadetime</fadetime>
@@ -1646,7 +1646,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                            <texture colordiffuse="Dark4" border="6">common/box.png</texture>
                         </control>
                         <control type="group">
                             <visible>Window.IsVisible(MyPVRChannels.xml)</visible>
@@ -1795,7 +1795,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Dark1" border="5">common/box.png</texture>
+                            <texture colordiffuse="Dark1" border="6">common/box.png</texture>
                         </control>
                         <control type="group">
                             <visible>Window.IsVisible(MyPVRChannels.xml)</visible>
@@ -1956,7 +1956,7 @@
                     <top>-10</top>
                     <right>0</right>
                     <bottom>-10</bottom>
-                    <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                    <texture colordiffuse="Dark4" border="6">common/box.png</texture>
                 </control>
                 <control type="panel" id="54" description="TV CHANNELS">
                     <right>0</right>
@@ -1975,28 +1975,28 @@
                         <control type="image" id="2">
                             <width>138</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image" id="2">
                             <left>139</left>
                             <width>100</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image" id="2">
                             <left>240</left>
                             <width>200</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                         </control>
                         <control type="image" id="2">
                             <left>440</left>
                             <width>870</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                             <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
                         </control>
@@ -2004,7 +2004,7 @@
                             <left>1311</left>
                             <width>471</width>
                             <height>69</height>
-                            <texture border="5">common/white.png</texture>
+                            <texture border="6">common/white.png</texture>
                             <colordiffuse>Black12</colordiffuse>
                             <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
                         </control>
@@ -2219,7 +2219,7 @@
                 <top>206</top>
                 <height>650</height>
                 <left>SidePad</left>
-                <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                 <visible>!String.IsEqual(ListItem.Label,..) </visible>
             </control>

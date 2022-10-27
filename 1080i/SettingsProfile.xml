@@ -63,7 +63,7 @@
                 <textoffsetx>30</textoffsetx>
                 <posy>110</posy>
                 <ondown>5</ondown>
-                <texturefocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</texturefocus>
             </control>
             <control type="button" id="5">
                 <left>15</left>
@@ -74,7 +74,7 @@
                 <align>left</align>
                 <onup>4</onup>
                 <ondown>2</ondown>
-                <texturefocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</texturefocus>
                 <label>$LOCALIZE[33084]$INFO[System.ProfileAutoLogin,: ,]</label>
                 <enable>!System.HasLoginScreen</enable>
             </control>
@@ -104,7 +104,7 @@
                         <control type="image">
                             <width>100%</width>
                             <height>66</height>
-                            <texture border="5" colordiffuse="$VAR[ColorSelectOtherBar]">common/white.png</texture>
+                            <texture border="6" colordiffuse="$VAR[ColorSelectOtherBar]">common/white.png</texture>
                         </control>
                         <control type="image">
                             <width>100%</width>

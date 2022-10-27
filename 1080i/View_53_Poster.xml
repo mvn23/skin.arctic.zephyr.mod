@@ -73,7 +73,7 @@
                     <left>0</left>
                     <width>PosterW</width>
                     <height>640</height>
-                    <texture colordiffuse="Fallback" border="4" background="true">common/box.png</texture>
+                    <texture colordiffuse="Fallback" border="6" background="true">common/box.png</texture>
                 </control>
                 <control type="image">
                     <width>PosterW</width>
@@ -84,7 +84,7 @@
                 <control type="image">
                     <width>PosterW</width>
                     <height>PosterH</height>
-                    <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                    <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
                     <visible>!Skin.HasSetting(thumbnails.white)</visible>
                 </control>
                 <include content="IndicatorPoster" condition="!Skin.HasSetting(hide.markers)">

@@ -16,7 +16,7 @@
                 <top>220</top>
                 <width>1760</width>
                 <height>636</height>
-                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                <texture border="6" colordiffuse="Panel">common/box.png</texture>
             </control>
             <control type="group">
                 <left>SidePad</left>

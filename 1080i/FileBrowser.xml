@@ -155,7 +155,7 @@
                         <control type="image">
                             <width>696</width>
                             <height>135</height>
-                            <texture border="5" colordiffuse="$VAR[ColorSelectOtherBar]">common/white.png</texture>
+                            <texture border="6" colordiffuse="$VAR[ColorSelectOtherBar]">common/white.png</texture>
                         </control>
                         <control type="image">
                             <width>696</width>

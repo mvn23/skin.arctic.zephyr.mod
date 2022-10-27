@@ -85,14 +85,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -178,14 +178,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -271,14 +271,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -364,14 +364,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -457,14 +457,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -550,14 +550,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -807,7 +807,7 @@
                         <control type="image">
                             <width>1760</width>
                             <height>640</height>
-                            <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                            <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
                             <visible>!Skin.HasSetting(thumbnails.white)</visible>
                         </control>
                         <control type="image">
@@ -817,7 +817,7 @@
                             <bottom>1</bottom>
                             <width>1758</width>
                             <height>638</height>
-                            <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                            <texture border="6" colordiffuse="Panel">common/box.png</texture>
                         </control>
                         <control type="image">
                             <left>1</left>
@@ -874,14 +874,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -967,14 +967,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -1060,14 +1060,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -1153,14 +1153,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -1246,14 +1246,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -1339,14 +1339,14 @@
                             <control type="image">
                                 <width>100%</width>
                                 <height>100%</height>
-                                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                                <texture border="6" colordiffuse="Panel">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>0</left>
                                 <top>0</top>
                                 <right>0</right>
                                 <bottom>0</bottom>
-                                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
                             </control>
                             <control type="multiimage" description="Fanart">
@@ -1585,7 +1585,7 @@
                         <control type="image">
                             <width>1760</width>
                             <height>640</height>
-                            <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                            <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
                             <visible>!Skin.HasSetting(thumbnails.white)</visible>
                         </control>
                         <control type="image">
@@ -1595,7 +1595,7 @@
                             <bottom>1</bottom>
                             <width>1758</width>
                             <height>638</height>
-                            <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                            <texture border="6" colordiffuse="Panel">common/box.png</texture>
                         </control>
                         <control type="image">
                             <left>1</left>

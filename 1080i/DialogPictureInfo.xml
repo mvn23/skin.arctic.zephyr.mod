@@ -49,7 +49,7 @@
                     <control type="image">
                         <width>870</width>
                         <height>66</height>
-                        <texture border="5" colordiffuse="Black12">common/white.png</texture>
+                        <texture border="6" colordiffuse="Black12">common/white.png</texture>
                     </control>
                     <control type="label">
                         <posx>30</posx>
@@ -68,7 +68,7 @@
                     <control type="image">
                         <width>870</width>
                         <height>66</height>
-                        <texture border="5" colordiffuse="$VAR[ColorSelectOtherBar]">common/white.png</texture>
+                        <texture border="6" colordiffuse="$VAR[ColorSelectOtherBar]">common/white.png</texture>
                     </control>
                     <control type="image">
                         <width>870</width>

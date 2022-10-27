@@ -11,7 +11,7 @@
                 <width>668</width>
                 <height>1082</height>
                 <colordiffuse>$VAR[OSDPanel]</colordiffuse>
-                <texture border="5">common/white.png</texture>
+                <texture border="6">common/white.png</texture>
                 <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
             </control>
             <control type="image">
@@ -118,12 +118,12 @@
                     <control type="image">
                         <width>667</width>
                         <height>120</height>
-                        <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="5">common/white.png</texture>
+                        <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="6">common/white.png</texture>
                     </control>
                     <control type="image">
                         <width>667</width>
                         <height>120</height>
-                        <texture border="5" colordiffuse="$VAR[ColorHighlightOtherBar]">common/gradient-box-wide.png</texture>
+                        <texture border="6" colordiffuse="$VAR[ColorHighlightOtherBar]">common/gradient-box-wide.png</texture>
                     </control>
                     <control type="image">
                         <width>667</width>

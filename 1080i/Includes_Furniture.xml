@@ -15,9 +15,9 @@
             <width>8</width>
             <onleft>$PARAM[onleft]</onleft>
             <onright>$PARAM[onright]</onright>
-            <texturesliderbackground border="4" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
-            <texturesliderbar border="4" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
-            <texturesliderbarfocus border="4" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
+            <texturesliderbackground border="6" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
+            <texturesliderbar border="6" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
+            <texturesliderbarfocus border="6" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
             <orientation>vertical</orientation>
             <showonepage>false</showonepage>
             <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus($PARAM[scrollid]) + !Container.Scrolling">Conditional</animation>
@@ -35,9 +35,9 @@
             <width>8</width>
             <onleft>$PARAM[onleft]</onleft>
             <onright>$PARAM[onright]</onright>
-            <texturesliderbackground border="4" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
-            <texturesliderbar border="4" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
-            <texturesliderbarfocus border="4" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
+            <texturesliderbackground border="6" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
+            <texturesliderbar border="6" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
+            <texturesliderbarfocus border="6" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
             <orientation>vertical</orientation>
             <showonepage>false</showonepage>
             <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus($PARAM[scrollid]) + !Container.Scrolling">Conditional</animation>
@@ -57,9 +57,9 @@
         <width>8</width>
         <onleft>50</onleft>
         <onright condition="$PARAM[jumpbar]">390000</onright>
-        <texturesliderbackground border="4" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
-        <texturesliderbar border="4" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
-        <texturesliderbarfocus border="4" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
+        <texturesliderbackground border="6" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
+        <texturesliderbar border="6" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
+        <texturesliderbarfocus border="6" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
         <orientation>vertical</orientation>
         <showonepage>false</showonepage>
         <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus($PARAM[scrollid]) + !Container.Scrolling">Conditional</animation>
@@ -81,9 +81,9 @@
         <height>8</height>
         <onup>$PARAM[onup]</onup>
         <ondown condition="$PARAM[jumpbar]">390000</ondown>
-        <texturesliderbackground border="4" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
-        <texturesliderbar border="4" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
-        <texturesliderbarfocus border="4" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
+        <texturesliderbackground border="6" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
+        <texturesliderbar border="6" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
+        <texturesliderbarfocus border="6" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
         <animation effect="fade" start="0" end="100" time="400" condition="Container.Scrolling | Control.HasFocus($PARAM[scrollid])">Conditional</animation>
         <animation effect="fade" start="100" end="0" time="400" condition="!Container.Scrolling + !Control.HasFocus($PARAM[scrollid])">Conditional</animation>
         </definition>
@@ -101,9 +101,9 @@
             <showonepage>false</showonepage>
             <orientation>vertical</orientation>
             <onright condition="!Skin.HasSetting(global.kioskmode)">9000</onright>
-            <texturesliderbackground border="4" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
-            <texturesliderbar border="4" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
-            <texturesliderbarfocus border="4" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
+            <texturesliderbackground border="6" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
+            <texturesliderbar border="6" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
+            <texturesliderbarfocus border="6" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
             <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
         </control>
     </include>
@@ -127,7 +127,7 @@
                 <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
             </control>
             <control type="image">
-                <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
             </control>
             <control type="group">
                 <visible>Container(290001).IsUpdating</visible>

@@ -1036,8 +1036,8 @@
     <include name="buttontexturesnumpad">
         <font>Null</font>
         <textcolor>Dark2</textcolor>
-        <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
-        <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
+        <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
+        <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
         <textureradioonfocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioonfocus>
         <textureradioonnofocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioonnofocus>
         <textureradioofffocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioofffocus>
@@ -1189,7 +1189,7 @@
         <control type="image">
             <width>100%</width>
             <height>100%</height>
-            <texture border="5" colordiffuse="Panel">common/box.png</texture>
+            <texture border="6" colordiffuse="Panel">common/box.png</texture>
         </control>
         <control type="multiimage" description="Fanart">
             <visible>!Skin.HasSetting(weather.hidefanart)</visible>
@@ -1207,7 +1207,7 @@
             <top>0</top>
             <right>0</right>
             <bottom>0</bottom>
-            <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+            <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
     </include>
@@ -1221,7 +1221,7 @@
         <control type="image">
             <width>1760</width>
             <height>640</height>
-            <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+            <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
             <visible>!Skin.HasSetting(thumbnails.white)</visible>
         </control>
         <control type="image">
@@ -1231,7 +1231,7 @@
             <bottom>1</bottom>
             <width>1758</width>
             <height>638</height>
-            <texture border="5" colordiffuse="Panel">common/box.png</texture>
+            <texture border="6" colordiffuse="Panel">common/box.png</texture>
         </control>
         <control type="image">
             <left>1</left>
@@ -1286,7 +1286,7 @@
             <control type="image">
                 <width>100%</width>
                 <height>100%</height>
-                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+                <texture border="6" colordiffuse="Panel">common/box.png</texture>
             </control>
             <control type="multiimage" description="Fanart">
                 <visible>!Skin.HasSetting(weather.hidefanart) + String.Contains(Skin.String(weather.fanart.path),multi) + !String.IsEmpty(Skin.String(weather.fanart.path))</visible>
@@ -1367,7 +1367,7 @@
                 <top>0</top>
                 <right>0</right>
                 <bottom>0</bottom>
-                <texture colordiffuse="BoxNotification" border="4" background="true">common/box21.png</texture>
+                <texture colordiffuse="BoxNotification" border="6" background="true">common/box21.png</texture>
                 <visible>!Skin.HasSetting(thumbnails.white)</visible>
             </control>
         </control>
@@ -1379,24 +1379,24 @@
             <width>270</width>
             <label>107</label>
             <font>Button</font>
-            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
         </control>
         <control type="button" id="11">
             <description>Yes</description>
             <width>270</width>
             <label>107</label>
             <font>Button</font>
-            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
         </control>
         <control type="button" id="10">
             <description>No</description>
             <width>270</width>
             <label>106</label>
             <font>Button</font>
-            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
         </control>
     </include>
 
@@ -2342,7 +2342,7 @@
                     <left>0</left>
                     <right>0</right>
                     <height>66</height>
-                    <texture border="5" colordiffuse="$VAR[ColorHighlight]">common/white.png</texture>
+                    <texture border="6" colordiffuse="$VAR[ColorHighlight]">common/white.png</texture>
                     <animation effect="fade" start="100" end="0" condition="!Control.HasFocus(3)">Conditional</animation>
                 </control>
                 <control type="image">
@@ -2674,7 +2674,7 @@
             <height>66</height>
             <label>$LOCALIZE[31414]$VAR[LabelWidget1]</label>
             <label2>$VAR[LabelWidgetShortcutsName]</label2>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,1,Home)</onclick>
@@ -2687,7 +2687,7 @@
             <height>66</height>
             <label>$LOCALIZE[31415]$VAR[LabelWidget2]</label>
             <label2>$VAR[LabelWidgetShortcutsName2]</label2>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,2,Home)</onclick>
@@ -2702,7 +2702,7 @@
             <height>66</height>
             <label>$LOCALIZE[31416]$VAR[LabelWidget3]</label>
             <label2>$VAR[LabelWidgetShortcutsName3]</label2>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,3,Home)</onclick>
@@ -2717,7 +2717,7 @@
             <height>66</height>
             <label>$LOCALIZE[31417]$VAR[LabelWidget4]</label>
             <label2>$VAR[LabelWidgetShortcutsName4]</label2>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,4,Home)</onclick>
@@ -2732,7 +2732,7 @@
             <height>66</height>
             <label>$LOCALIZE[31418]$VAR[LabelWidget5]</label>
             <label2>$VAR[LabelWidgetShortcutsName5]</label2>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,5,Home)</onclick>
@@ -2747,7 +2747,7 @@
             <height>66</height>
             <label>$LOCALIZE[31477]$VAR[LabelWidget6]</label>
             <label2>$VAR[LabelWidgetShortcutsName6]</label2>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
             <align>left</align>
             <include>DefDialogButtonsGradient</include>
             <onclick>SetProperty(skinshortcuts-Widget,6,Home)</onclick>
@@ -3745,7 +3745,7 @@
                 <top>10</top>
                 <right>17</right>
                 <bottom>10</bottom>
-                <texture border="5" colordiffuse="Light4">common/black-back.png</texture>
+                <texture border="6" colordiffuse="Light4">common/black-back.png</texture>
             </control>
             <include content="def_weatherfanart.widgets">
                 <param name="bordertopbottom" value="10"/>
@@ -3814,7 +3814,7 @@
                 <top>10</top>
                 <right>17</right>
                 <bottom>10</bottom>
-                <texture border="5" colordiffuse="Light4">common/black-back.png</texture>
+                <texture border="6" colordiffuse="Light4">common/black-back.png</texture>
             </control>
             <include content="def_weatherfanart.widgets">
                 <param name="bordertopbottom" value="10"/>
@@ -3898,7 +3898,7 @@
                 <top>10</top>
                 <right>17</right>
                 <bottom>10</bottom>
-                <texture border="5" colordiffuse="Light4">common/black-back.png</texture>
+                <texture border="6" colordiffuse="Light4">common/black-back.png</texture>
             </control>
             <include content="def_weatherfanart.widgets">
                 <param name="bordertopbottom" value="10"/>
@@ -3984,7 +3984,7 @@
                 <top>10</top>
                 <right>17</right>
                 <bottom>10</bottom>
-                <texture border="5" colordiffuse="Light4">common/black-back.png</texture>
+                <texture border="6" colordiffuse="Light4">common/black-back.png</texture>
             </control>
             <include content="def_weatherfanart.widgets">
                 <param name="bordertopbottom" value="10"/>
@@ -4053,7 +4053,7 @@
                 <top>10</top>
                 <right>17</right>
                 <bottom>10</bottom>
-                <texture border="5" colordiffuse="Light4">common/black-back.png</texture>
+                <texture border="6" colordiffuse="Light4">common/black-back.png</texture>
             </control>
             <include content="def_weatherfanart.widgets">
                 <param name="bordertopbottom" value="10"/>
@@ -4137,7 +4137,7 @@
                 <top>10</top>
                 <right>17</right>
                 <bottom>10</bottom>
-                <texture border="5" colordiffuse="Light4">common/black-back.png</texture>
+                <texture border="6" colordiffuse="Light4">common/black-back.png</texture>
             </control>
             <include content="def_weatherfanart.widgets">
                 <param name="bordertopbottom" value="10"/>
@@ -4906,7 +4906,7 @@
         <param name="colordiffuse" default="BoxWidget"/>
         <definition>
         <bordersize>1</bordersize>
-        <bordertexture border="4" colordiffuse="$PARAM[colordiffuse]">common/box21.png</bordertexture>
+        <bordertexture border="6" colordiffuse="$PARAM[colordiffuse]">common/box21.png</bordertexture>
         </definition>
     </include>
     

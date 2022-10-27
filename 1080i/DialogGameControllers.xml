@@ -116,8 +116,8 @@
                     <description>OK</description>
                     <align>center</align>
                     <width>300</width>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <include>DefDialogButtons</include>
                     <label>$LOCALIZE[186]</label>
                 </control>
@@ -125,8 +125,8 @@
                     <description>Reset</description>
                     <align>center</align>
                     <width>300</width>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <include>DefDialogButtons</include>
                     <label>$LOCALIZE[13007]</label>
                 </control>
@@ -134,8 +134,8 @@
                     <description>Install More Controllers</description>
                     <align>center</align>
                     <width>300</width>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <include>DefDialogButtons</include>
                     <label>$LOCALIZE[21452]</label>
                 </control>
@@ -143,8 +143,8 @@
                     <description>Install All</description>
                     <align>center</align>
                     <width>300</width>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <include>DefDialogButtons</include>
                     <label>$LOCALIZE[35021]</label>
                 </control>
@@ -152,8 +152,8 @@
                     <description>Fix Skipping</description>
                     <align>center</align>
                     <width>300</width>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <include>DefDialogButtons</include>
                     <label>$LOCALIZE[35019]</label>
                 </control>
@@ -161,8 +161,8 @@
                     <description>Help</description>
                     <align>center</align>
                     <width>300</width>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <include>DefDialogButtons</include>
                     <label>$LOCALIZE[10043]</label>
                 </control>
@@ -180,15 +180,15 @@
         <control type="button" id="7">
             <align>center</align>
             <width>380</width>
-            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
             <include>DefDialogButtons</include>
         </control>
         <control type="button" id="10">
             <align>center</align>
             <width>380</width>
-            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-            <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+            <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
             <include>DefDialogButtons</include>
         </control>
     </controls>

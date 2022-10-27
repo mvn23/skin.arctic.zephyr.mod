@@ -21,7 +21,7 @@
                 <control type="image">
                     <aspectratio scalediffuse="false">scale</aspectratio>
                     <animation effect="fade" start="100" end="33" time="0" condition="true">Conditional</animation>
-                    <texture border="5" colordiffuse="Panel" diffuse="diffuse/wall-fanart.png">$VAR[FanartImage]</texture>
+                    <texture border="6" colordiffuse="Panel" diffuse="diffuse/wall-fanart.png">$VAR[FanartImage]</texture>
                 </control>                
                 <control type="wraplist" id="506">
                     <top>0</top>
@@ -74,7 +74,7 @@
                     <top>0</top>
                     <width>1760</width>
                     <height>640</height>
-                    <texture colordiffuse="Box2" border="4" background="true">common/box21.png</texture>
+                    <texture colordiffuse="Box2" border="6" background="true">common/box21.png</texture>
                     <visible>!Skin.HasSetting(thumbnails.white)</visible>
                 </control>
                 <control type="group">

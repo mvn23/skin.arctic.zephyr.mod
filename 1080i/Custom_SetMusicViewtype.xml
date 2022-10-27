@@ -191,7 +191,7 @@
                     <top>205</top>
                     <width>780</width>
                     <height>439</height>
-                    <texture border="5">$VAR[ImageViewSelectorMusic]</texture>
+                    <texture border="6">$VAR[ImageViewSelectorMusic]</texture>
                 </control>
             </control>
         </control>

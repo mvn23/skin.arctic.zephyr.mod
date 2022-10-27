@@ -54,12 +54,12 @@
                     <control type="image">
                         <height>70</height>
                         <width>100%</width>
-                        <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="5">common/white.png</texture>
+                        <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="6">common/white.png</texture>
                     </control>
                     <control type="image">
                         <height>70</height>
                         <width>100%</width>
-                        <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</texture>
+                        <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</texture>
                     </control>
                     <control type="label">
                         <left>30</left>
@@ -257,13 +257,13 @@
                             <control type="image">
                                 <height>70</height>
                                 <width>1256</width>
-                                <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="5">common/white.png</texture>
+                                <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="6">common/white.png</texture>
                                 <visible>Control.HasFocus(1100)</visible>
                             </control>
                             <control type="image">
                                 <height>70</height>
                                 <width>1256</width>
-                                <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</texture>
+                                <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</texture>
                                 <visible>Control.HasFocus(1100)</visible>
                             </control>
                             <control type="label">
@@ -474,13 +474,13 @@
                         <control type="image">
                             <height>100</height>
                             <width>1256</width>
-                            <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="5">common/white.png</texture>
+                            <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="6">common/white.png</texture>
                             <visible>Control.HasFocus(1200)</visible>
                         </control>
                         <control type="image">
                             <height>100</height>
                             <width>1256</width>
-                            <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</texture>
+                            <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</texture>
                             <visible>Control.HasFocus(1200)</visible>
                         </control>
                         <!-- Icon ethernet -->
@@ -818,13 +818,13 @@
                         <control type="image">
                             <height>100</height>
                             <width>1256</width>
-                            <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="5">common/white.png</texture>
+                            <texture colordiffuse="$VAR[ColorSelectOtherBar]" border="6">common/white.png</texture>
                             <visible>Control.HasFocus(1300)</visible>
                         </control>
                         <control type="image">
                             <height>100</height>
                             <width>1256</width>
-                            <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</texture>
+                            <texture colordiffuse="$VAR[ColorHighlightOtherBar]" border="6">common/gradient-box-wide-cut.png</texture>
                             <visible>Control.HasFocus(1300)</visible>
                         </control>
                         <!-- default -->
@@ -1013,8 +1013,8 @@
                 <control type="button" id="1501">
                     <width>320</width>
                     <font>Button</font>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <label />
                     <onup>1100</onup>
                     <ondown>1100</ondown>
@@ -1025,8 +1025,8 @@
                 <control type="button" id="1500">
                     <width>320</width>
                     <font>Button</font>
-                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
-                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[ColorHighlight]" border="6">common/box.png</texturefocus>
+                    <texturenofocus colordiffuse="Black12" border="6">common/box.png</texturenofocus>
                     <label />
                     <onup>1100</onup>
                     <ondown>1100</ondown>
