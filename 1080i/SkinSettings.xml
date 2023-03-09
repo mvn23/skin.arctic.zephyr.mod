@@ -417,6 +417,15 @@
                             <onclick>Skin.ToggleSetting(homemenu.items.underlined)</onclick>
                             <enable>!$EXP[HomeIsVertical] + ![[$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsModern] | $EXP[HomeIsSpotlight] | $EXP[HomeIsClassic]] + Skin.HasSetting(home.showicons)]</enable>
                         </control>
+                        <control type="radiobutton" id="98171">
+                            <width>1360</width>
+                            <visible>ControlGroup(9100).HasFocus(9101)</visible>
+                            <include>DefSettingsButtonGradientSkinSettings</include>
+                            <label>vertical.menu.left.background</label>
+                            <selected>Skin.HasSetting(vertical.menu.left.background)</selected>
+                            <onclick>Skin.ToggleSetting(vertical.menu.left.background)</onclick>
+                            <enable>$EXP[HomeIsVerticalAll]</enable>
+                        </control>
                         <control type="radiobutton" id="9898" description="Horz Sub">
                             <width>1360</width>
                             <visible>ControlGroup(9100).HasFocus(9101)</visible>

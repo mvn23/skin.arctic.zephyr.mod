@@ -3374,11 +3374,27 @@
             <!-- LEFT SIDE -->
             <control type="group">
                 <include>Animation.LeftSide.Vertical.Menu</include>
-
+                <control type="image">
+                    <visible>Skin.HasSetting(vertical.menu.left.background)</visible>
+                    <top>-20</top>
+                    <width>505</width>
+                    <height>1180</height>
+                    <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                    <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="-296,0" time="0" condition="Skin.HasSetting(homemenu.only.icons) + Skin.HasSetting(home.showicons)">Conditional</animation>
+                    <animation effect="fade" start="100" end="33" time="400" condition="[!Control.HasFocus(300) + !Control.HasFocus(302)] + ![Skin.HasSetting(homemenu.only.icons) + Skin.HasSetting(home.showicons)] + !Skin.HasSetting(homemenu.vertical.noslide)">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="400" condition="[!Control.HasFocus(300) + !Control.HasFocus(302)] + ![Skin.HasSetting(homemenu.only.icons) + Skin.HasSetting(home.showicons)] + !Skin.HasSetting(homemenu.vertical.noslide) + Skin.HasSetting(homemenu.hide.lines)">Conditional</animation>
+                    <include condition="![Skin.HasSetting(home.showicons) + Skin.HasSetting(homemenu.only.icons)]">Animation.Slide.Vertical.Menu</include>
+                    <include condition="[Skin.HasSetting(home.showicons) + Skin.HasSetting(homemenu.only.icons)]" content="Animation.Slide.Vertical.Menu">
+                        <param name="left" value="-50" />
+                    </include>
+                </control>
+                
                 <!-- Home List -->
                 <control type="list" id="300">
                     <animation effect="slide" start="0,0" end="-296,0" time="0" condition="Skin.HasSetting(homemenu.only.icons) + Skin.HasSetting(home.showicons)">Conditional</animation>
                     <animation effect="slide" start="0,0" end="0,-38" time="0" condition="true">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="-11,0" time="0" condition="Skin.HasSetting(vertical.menu.left.background)">Conditional</animation>
                     <animation effect="slide" start="0,0" end="0,30" time="0" condition="Skin.HasSetting(home.showheader)">Conditional</animation>
                     <animation effect="fade" start="100" end="33" time="400" condition="[!Control.HasFocus(300) + !Control.HasFocus(302)] + ![Skin.HasSetting(homemenu.only.icons) + Skin.HasSetting(home.showicons)] + !Skin.HasSetting(homemenu.vertical.noslide)">Conditional</animation>
                     <animation effect="fade" start="100" end="0" time="400" condition="[!Control.HasFocus(300) + !Control.HasFocus(302)] + ![Skin.HasSetting(homemenu.only.icons) + Skin.HasSetting(home.showicons)] + !Skin.HasSetting(homemenu.vertical.noslide) + Skin.HasSetting(homemenu.hide.lines)">Conditional</animation>
@@ -3555,6 +3571,7 @@
                     <visible allowhiddenfocus="true">Control.HasFocus(302)</visible>
                     <animation effect="slide" start="0,0" end="0,-38" time="0" condition="true">Conditional</animation>
                     <animation effect="slide" start="0,0" end="0,30" time="0" condition="Skin.HasSetting(home.showheader)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="-11,0" time="0" condition="Skin.HasSetting(vertical.menu.left.background)">Conditional</animation>
                     <animation effect="fade" start="100" end="33" time="400" condition="Control.HasFocus(301)">Conditional</animation>
                     <include condition="![Skin.HasSetting(home.showicons) + Skin.HasSetting(homemenu.only.icons)]">Animation.Slide.Vertical.Menu</include>
                     <include condition="[Skin.HasSetting(home.showicons) + Skin.HasSetting(homemenu.only.icons)]" content="Animation.Slide.Vertical.Menu">
