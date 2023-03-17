@@ -1815,7 +1815,6 @@
                 <param name="left" value="-10" />
                 <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.resolution) + !String.IsEmpty(ListItem.VideoResolution) + !String.Contains(ListItem.Path,videodb://movies/sets,left)" />
             </include>
-            
             <include content="Def_Flags_Furniture_Small" condition="!Skin.HasSetting(furniture.flags.rating)">
                 <param name="Star" value="Flagstar" />
                 <param name="visible" value="!Skin.HasSetting(furniture.numericrating)" />
@@ -1833,14 +1832,12 @@
                 <visible>!String.IsEmpty(ListItem.Rating) | [!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(userrating.override.rating)]</visible>
                 <visible>Skin.HasSetting(furniture.numericrating) + !Skin.HasSetting(furniture.flags.rating)</visible>
             </control>
-            <control type="image">
-                <width>48</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture colordiffuse="Dark1">flags/airing.png</texture>
-                <aspectratio align="left">scale</aspectratio>
-                <visible>!Skin.HasSetting(furniture.flags.nextaired) + $EXP[HasNextAired]</visible>
-            </control>
+            <include content="FurnitureFlagImageColorDiffuse">
+                <param name="texture" value="flags/airing.png" />
+                <param name="visible" value="!Skin.HasSetting(furniture.flags.nextaired) + $EXP[HasNextAired]" />
+                <param name="width" value="48" />
+                <param name="colordiffuse" value="Dark1" />
+            </include>
             <control type="label">
                 <width min="128">auto</width>
                 <centertop>50%</centertop>
