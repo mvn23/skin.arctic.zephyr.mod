@@ -5059,7 +5059,7 @@
     <include name="FurnitureFlagImage">
         <param name="widthmin" default="20"/>
         <param name="widthmax" default="100"/>
-        <param name="height" default="64"/>
+        <param name="height" default="60"/>
         <param name="left" default="0"/>
         <param name="texture" default=""/>
         <param name="visible" default="false"/>
@@ -5077,15 +5077,13 @@
     </include>
     
     <include name="FurnitureFlagImageColorDiffuse">
-        <param name="widthmin" default="20"/>
-        <param name="widthmax" default="100"/>
         <param name="height" default="64"/>
         <param name="left" default="0"/>
         <param name="texture" default=""/>
         <param name="visible" default="false"/>
         <definition>
             <control type="image">
-                <width min="$PARAM[widthmin]" max="$PARAM[widthmax]">auto</width>
+                <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
                 <left>$PARAM[left]</left>
                 <centertop>50%</centertop>
