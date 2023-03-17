@@ -1809,16 +1809,13 @@
                     <textcolor>Dark1</textcolor>
                     <visible>!ListItem.IsCollection</visible>
                 </control>
-            </control>
-            <control type="image" description="Video Resolution">
-                <width min="20" max="90">auto</width>
-                <height>70</height>
-                <left>-10</left>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">$INFO[ListItem.VideoResolution,flags/color/resolution/,.png]</texture>
-                <aspectratio align="left">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.resolution) + !String.IsEmpty(ListItem.VideoResolution) + !String.Contains(ListItem.Path,videodb://movies/sets,left)</visible>
-            </control>
+            </control>            
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="$INFO[ListItem.VideoResolution,flags/color/resolution/,.png]" />
+                <param name="left" value="-10" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.resolution) + !String.IsEmpty(ListItem.VideoResolution) + !String.Contains(ListItem.Path,videodb://movies/sets,left)" />
+            </include>
+            
             <include content="Def_Flags_Furniture_Small" condition="!Skin.HasSetting(furniture.flags.rating)">
                 <param name="Star" value="Flagstar" />
                 <param name="visible" value="!Skin.HasSetting(furniture.numericrating)" />
@@ -1855,145 +1852,58 @@
                 <textcolor>Dark2</textcolor>
                 <visible>!Skin.HasSetting(furniture.flags.nextaired) + $EXP[HasNextAired]</visible>
             </control>
-            <control type="image" description="Video Codec">
-                <width min="20" max="100">auto</width>
-                <height>60</height>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">$INFO[ListItem.VideoCodec,flags/color/source/,.png]</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.videocodec) + !String.IsEmpty(ListItem.VideoCodec)</visible>
-            </control>
-            <control type="image" description="Aspect Ratio">
-                <width min="20" max="80">auto</width>
-                <height>60</height>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">$INFO[ListItem.VideoAspect,flags/color/aspectratio/,.png]</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.aspectratio) + !String.IsEmpty(ListItem.VideoAspect)</visible>
-            </control>
-            <control type="image" description="Audio Codec">
-                <width min="20" max="108">auto</width>
-                <height>60</height>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">$VAR[ListItemAudioCodec,flags/color/audio/,.png]</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.audiocodec) + !String.IsEmpty(ListItem.AudioCodec)</visible>
-            </control>
-            <control type="image" description="Audio Channels">
-                <width min="20" max="80">auto</width>
-                <height>60</height>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">$INFO[ListItem.AudioChannels,flags/color/channels/,.png]</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.audiochannels) + !String.IsEmpty(ListItem.AudioChannels)</visible>
-            </control>
-            <control type="image" description="Video Resolution">
-                <width>48</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture colordiffuse="Dark1">flags/video.png</texture>
-                <aspectratio align="left">scale</aspectratio>
-                <visible>!Skin.HasSetting(furniture.flagicons) + !String.IsEmpty(ListItem.VideoResolution)</visible>
-            </control>
-            <control type="label" description="Video">
-                <width min="128">auto</width>
-                <centertop>50%</centertop>
-                <height>64</height>
-                <align>left</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.VideoCodec,,  •  ]$INFO[ListItem.VideoResolution]$INFO[ListItem.VideoAspect,  •  ,]$VAR[ListItemHDR,  •  ,]</label>
-                <font>Flag</font>
-                <textcolor>Dark1</textcolor>
-                <visible>!Skin.HasSetting(furniture.flagicons) + !String.IsEmpty(ListItem.VideoResolution)</visible>
-            </control>
-            <control type="image" description="Audio">
-                <width>48</width>
-                <centertop>50%</centertop>
-                <height>64</height>
-                <texture colordiffuse="Dark1">flags/audio.png</texture>
-                <aspectratio align="left">scale</aspectratio>
-                <visible>!Skin.HasSetting(furniture.flagicons) + !String.IsEmpty(ListItem.AudioCodec)</visible>
-            </control>
-            <control type="label" description="Audio">
-                <width>auto</width>
-                <centertop>50%</centertop>
-                <height>64</height>
-                <align>left</align>
-                <aligny>center</aligny>
-                <label>$VAR[ListItemAudioCodec]$VAR[LabelAudioChannels,  •  ,]</label>
-                <font>Flag</font>
-                <textcolor>Dark1</textcolor>
-                <visible>!Skin.HasSetting(furniture.flagicons) + !String.IsEmpty(ListItem.AudioCodec)</visible>
-            </control>
-            <control type="image" description="HDR10+">
-                <width min="20" max="100">auto</width>
-                <height>64</height>
-                <left>10</left>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">flags/color/other/hdr10plus.png</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoHDR10Plus]</visible>
-            </control>
-            <control type="image" description="HDR10">
-                <width min="20" max="100">auto</width>
-                <height>64</height>
-                <left>10</left>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">flags/color/other/hdr10.png</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoHDR10]</visible>
-            </control>
-            <control type="image" description="HDR">
-                <width min="20" max="100">auto</width>
-                <height>64</height>
-                <left>10</left>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">flags/color/other/hdrnew.png</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoHDR]</visible>
-            </control>
-            <control type="image" description="HLG">
-                <width min="20" max="80">auto</width>
-                <height>64</height>
-                <left>10</left>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">flags/color/other/hlg.png</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoHLG]</visible>
-            </control>
-            <control type="image" description="Dolby Vision">
-                <width min="20" max="100">auto</width>
-                <height>64</height>
-                <left>10</left>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">flags/color/other/dolbyvision.png</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoDolbyVision]</visible>
-            </control>
-            <control type="image" description="MPAA">
-                <width min="20" max="100">auto</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture colordiffuse="$VAR[ColorRating]" fallback="flags/fallback.png">$VAR[RatingFlagVar]</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.mpaa) + !String.IsEmpty(ListItem.MPAA) + Skin.HasSetting(furniture.coloredicons) + Skin.HasSetting(furniture.disable.default.icons.mpaa)</visible>
-            </control>
-            <control type="image" description="MPAA">
-                <width min="20" max="100">auto</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">flags4/$VAR[RatingFlagVar]</texture>
-                <aspectratio align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.mpaa) + !String.IsEmpty(ListItem.MPAA) + Skin.HasSetting(furniture.coloredicons) + !Skin.HasSetting(furniture.disable.default.icons.mpaa)</visible>
-            </control>
-            <control type="image" description="Duration">
-                <width>48</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture colordiffuse="Dark1">flags/time.png</texture>
-                <aspectratio align="left">scale</aspectratio>
-                <visible>!String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.Duration(mins)) + [Control.IsVisible(500) | Control.IsVisible(53) | Control.IsVisible(52) | Control.IsVisible(55)]</visible>
-            </control>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="$INFO[ListItem.VideoCodec,flags/color/source/,.png]" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.videocodec) + !String.IsEmpty(ListItem.VideoCodec)" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="$INFO[ListItem.VideoAspect,flags/color/aspectratio/,.png]" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.aspectratio) + !String.IsEmpty(ListItem.VideoAspect)" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="$INFO[ListItem.AudioCodec,flags/color/audio/,.png]" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.audiocodec) + !String.IsEmpty(ListItem.AudioCodec)" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="$INFO[ListItem.AudioChannels,flags/color/channels/,.png]" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.audiochannels) + !String.IsEmpty(ListItem.AudioChannels)" />
+            </include>
+            
+            <!-- HDR Flags -->
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/color/other/hdr10plus.png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoHDR10Plus]" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/color/other/hdr10.png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoHDR10]" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/color/other/hdrnew.png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoHDR]" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/color/other/hlg.png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoHLG]" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/color/other/dolbyvision.png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.hdr) + $EXP[IsVideoDolbyVision]" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="$VAR[RatingFlagVar]" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.mpaa) + !String.IsEmpty(ListItem.MPAA) + Skin.HasSetting(furniture.coloredicons) + Skin.HasSetting(furniture.disable.default.icons.mpaa)" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags4/$VAR[RatingFlagVar]" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.mpaa) + !String.IsEmpty(ListItem.MPAA) + Skin.HasSetting(furniture.coloredicons) + !Skin.HasSetting(furniture.disable.default.icons.mpaa)" />
+            </include>
+            <include content="FurnitureFlagImageColorDiffuse">
+                <param name="texture" value="flags/time.png" />
+                <param name="visible" value="!String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.Duration(mins)) + [Control.IsVisible(500) | Control.IsVisible(53) | Control.IsVisible(52) | Control.IsVisible(55)]" />
+                <param name="width" value="48" />
+                <param name="colordiffuse" value="Dark1" />
+            </include>
             <control type="label" description="Duration">
                 <width>auto</width>
                 <centertop>50%</centertop>
@@ -2005,57 +1915,35 @@
                 <textcolor>Dark1</textcolor>
                 <visible>!String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.Duration(mins)) + [Control.IsVisible(500) | Control.IsVisible(53) | Control.IsVisible(52) | Control.IsVisible(55)]</visible>
             </control>
-            <control type="image" description="3D">
-                <width>64</width>
-                <centertop>50%</centertop>
-                <height>64</height>
-                <left>10</left>
-                <texture>flags/color/other/3d.png</texture>
-                <visible>ListItem.IsStereoscopic | String.Contains(ListItem.Filenameandpath,.3D)</visible>
-            </control>
-            <control type="image" description="Bluray">
-                <width>84</width>
-                <centertop>50%</centertop>
-                <height>64</height>
-                <left>10</left>
-                <texture>flags/color/other/$VAR[ImageBluray].png</texture>
-                <aspectratio aligny="center" align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.bluray) + !String.Contains(ListItem.Filenameandpath,.3D) + [String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,bdrip) | String.Contains(ListItem.FilenameAndPath,bd25) | String.Contains(ListItem.FilenameAndPath,bd50) | String.Contains(ListItem.FilenameAndPath,blu-ray)]</visible>
-            </control>
-            <control type="image" description="WEB-DL">
-                <width>84</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture fallback="flags/fallback.png">flags/color/other/web-dl.png</texture>
-                <aspectratio aligny="center" align="center">keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.bluray) + [String.Contains(ListItem.Filenameandpath,.web.) | String.Contains(ListItem.Filenameandpath,web-dl) | String.Contains(ListItem.Filenameandpath,webdl) | String.Contains(ListItem.Filenameandpath,webrip)]</visible>
-            </control>
-            <control type="image" description="HD DVD">
-                <width>94</width>
-                <centertop>50%</centertop>
-                <height>64</height>
-                <aspectratio aligny="center" align="center">keep</aspectratio>
-                <texture>flags/hddvd.png</texture>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.bluray)</visible>
-                <visible>String.Contains(ListItem.FilenameAndPath,hddvd)</visible>
-            </control>
-            <control type="image" description="DVD">
-                <width>84</width>
-                <centertop>50%</centertop>
-                <height>64</height>
-                <aspectratio aligny="center" align="center">keep</aspectratio>
-                <texture>flags/color/other/dvd.png</texture>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.bluray)</visible>
-                <visible>String.Contains(ListItem.FilenameAndPath,dvd) + !String.Contains(ListItem.FilenameAndPath,hddvd)</visible>
-            </control>
-            <control type="image" description="IMDB Top 250">
-                <width>84</width>
-                <centertop>50%</centertop>
-                <height>64</height>
-                <aspectratio aligny="center" align="center">keep</aspectratio>
-                <texture colordiffuse="Dark1">flags/imdb.png</texture>
-                <visible>Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.top250) + !String.IsEmpty(ListItem.Top250)</visible>
-            </control>
+            <include content="FurnitureFlagImageColorDiffuse">
+                <param name="texture" value="flags/color/other/3d.png" />
+                <param name="visible" value="ListItem.IsStereoscopic | String.Contains(ListItem.Filenameandpath,.3D)" />
+                <param name="width" value="64" />
+                <param name="colordiffuse" value="Dark1" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/color/other/$VAR[ImageBluray].png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.bluray) + !String.Contains(ListItem.Filenameandpath,.3D) + [String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,bdrip) | String.Contains(ListItem.FilenameAndPath,bd25) | String.Contains(ListItem.FilenameAndPath,bd50) | String.Contains(ListItem.FilenameAndPath,blu-ray)]" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/color/other/web-dl.png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.bluray) + [String.Contains(ListItem.Filenameandpath,.web.) | String.Contains(ListItem.Filenameandpath,web-dl) | String.Contains(ListItem.Filenameandpath,webdl) | String.Contains(ListItem.Filenameandpath,webrip)]" />
+                <param name="width" value="84" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/hddvd.png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.bluray) + String.Contains(ListItem.FilenameAndPath,hddvd)" />
+                <param name="width" value="94" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/color/other/dvd.png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.bluray) + String.Contains(ListItem.FilenameAndPath,dvd) + !String.Contains(ListItem.FilenameAndPath,hddvd)" />
+                <param name="width" value="84" />
+            </include>
+            <include content="FurnitureFlagImage">
+                <param name="texture" value="flags/imdb.png" />
+                <param name="visible" value="Skin.HasSetting(furniture.flagicons) + !Skin.HasSetting(furniture.flags.top250) + !String.IsEmpty(ListItem.Top250)" />
+            </include>
             <control type="label" description="IMDB Top 250">
                 <centertop>50%</centertop>
                 <width>auto</width>
@@ -2196,6 +2084,44 @@
                 <left>5</left>
                 <textcolor>Dark2</textcolor>
                 <label>$INFO[Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter)]%</label>
+            </control>
+            <control type="image" description="Video Resolution">
+                <width>48</width>
+                <height>64</height>
+                <centertop>50%</centertop>
+                <texture colordiffuse="Dark1">flags/video.png</texture>
+                <aspectratio align="left">scale</aspectratio>
+                <visible>!Skin.HasSetting(furniture.flagicons) + !String.IsEmpty(ListItem.VideoResolution)</visible>
+            </control>
+            <control type="label" description="Video">
+                <width min="128">auto</width>
+                <centertop>50%</centertop>
+                <height>64</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.VideoCodec,,  •  ]$INFO[ListItem.VideoResolution]$INFO[ListItem.VideoAspect,  •  ,]$VAR[ListItemHDR,  •  ,]</label>
+                <font>Flag</font>
+                <textcolor>Dark1</textcolor>
+                <visible>!Skin.HasSetting(furniture.flagicons) + !String.IsEmpty(ListItem.VideoResolution)</visible>
+            </control>
+            <control type="image" description="Audio">
+                <width>48</width>
+                <centertop>50%</centertop>
+                <height>64</height>
+                <texture colordiffuse="Dark1">flags/audio.png</texture>
+                <aspectratio align="left">scale</aspectratio>
+                <visible>!Skin.HasSetting(furniture.flagicons) + !String.IsEmpty(ListItem.AudioCodec)</visible>
+            </control>
+            <control type="label" description="Audio">
+                <width>auto</width>
+                <centertop>50%</centertop>
+                <height>64</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$VAR[ListItemAudioCodec]$VAR[LabelAudioChannels,  •  ,]</label>
+                <font>Flag</font>
+                <textcolor>Dark1</textcolor>
+                <visible>!Skin.HasSetting(furniture.flagicons) + !String.IsEmpty(ListItem.AudioCodec)</visible>
             </control>
         </control>
         <control type="grouplist">

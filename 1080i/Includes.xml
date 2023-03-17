@@ -5055,4 +5055,46 @@
     <variable name="AutoCompletionPath">
         <value condition="System.AddonIsEnabled(plugin.program.autocompletion)">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
     </variable>
+    
+    <include name="FurnitureFlagImage">
+        <param name="widthmin" default="20"/>
+        <param name="widthmax" default="100"/>
+        <param name="height" default="64"/>
+        <param name="left" default="0"/>
+        <param name="texture" default=""/>
+        <param name="visible" default="false"/>
+        <definition>
+            <control type="image">
+                <width min="$PARAM[widthmin]" max="$PARAM[widthmax]">auto</width>
+                <height>$PARAM[height]</height>
+                <left>$PARAM[left]</left>
+                <centertop>50%</centertop>
+                <texture fallback="flags/fallback.png">$PARAM[texture]</texture>
+                <aspectratio align="center">keep</aspectratio>
+                <visible>$PARAM[visible]</visible>
+            </control>
+        </definition>
+    </include>
+    
+    <include name="FurnitureFlagImageColorDiffuse">
+        <param name="widthmin" default="20"/>
+        <param name="widthmax" default="100"/>
+        <param name="height" default="64"/>
+        <param name="left" default="0"/>
+        <param name="texture" default=""/>
+        <param name="visible" default="false"/>
+        <definition>
+            <control type="image">
+                <width min="$PARAM[widthmin]" max="$PARAM[widthmax]">auto</width>
+                <height>$PARAM[height]</height>
+                <left>$PARAM[left]</left>
+                <centertop>50%</centertop>
+                <texture colordiffuse="$PARAM[colordiffuse]" fallback="flags/fallback.png">$PARAM[texture]</texture>
+                <aspectratio align="center">keep</aspectratio>
+                <visible>$PARAM[visible]</visible>
+            </control>
+        </definition>
+    </include>
+    
+
 </includes>
