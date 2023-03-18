@@ -5058,7 +5058,7 @@
     
     <include name="FurnitureFlagImage">
         <param name="widthmin" default="20"/>
-        <param name="widthmax" default="100"/>
+        <param name="widthmax" default="94"/>
         <param name="height" default="60"/>
         <param name="left" default="0"/>
         <param name="texture" default=""/>
