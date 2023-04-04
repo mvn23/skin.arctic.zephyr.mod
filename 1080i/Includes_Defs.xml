@@ -539,6 +539,18 @@
         <alttexturefocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturefocus>
         <texturefocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</texturefocus>
     </include>
+    
+    <include name="DefDialogInfoButton">
+        <width>440</width>
+        <align>left</align>
+        <font>Tiny</font>
+        <textoffsetx>0</textoffsetx>
+        <textcolor>Dark2</textcolor>
+        <height>36</height>
+        <focusedcolor>Selected</focusedcolor>
+        <alttexturefocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</alttexturefocus>
+        <texturefocus colordiffuse="$VAR[ColorHighlightOtherBar]" border="5">common/gradient-box-wide-cut.png</texturefocus>
+    </include>
 
     <include name="DefSettingsButtonGradientDisabled">
         <align>left</align>

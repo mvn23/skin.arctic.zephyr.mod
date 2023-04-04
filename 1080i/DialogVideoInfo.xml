@@ -36,6 +36,9 @@
     <onunload>ClearProperty(Item_Title,home)</onunload>
     <onunload>ClearProperty(Item_Year,home)</onunload>
     <onunload>ClearProperty(Item_DBTYPE,home)</onunload>
+    
+    <onload>SetProperty(Audio_1,$INFO[ListItem.Property(AudioLanguage.1)],home)</onload>
+    
     <controls>
         <include>DialogVideoInfoWIP</include>
         <include content="DialogInfoOverlay">
