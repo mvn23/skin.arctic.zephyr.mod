@@ -1119,19 +1119,6 @@
             <visible>!String.IsEqual(ListItem.Label,..) + String.IsEqual(Container.SortMethod,$LOCALIZE[38018])</visible>
         </control>
         <control type="label">
-            <right>30</right>
-            <width>500</width>
-            <aligny>center</aligny>
-            <height>64</height>
-            <align>right</align>
-            <font>SmallNavi</font>
-            <textcolor>Dark1</textcolor>
-            <selectedcolor>Dark1</selectedcolor>
-            <label>$INFO[ListItem.Label2]</label>
-            <visible>!Container.Content(songs) + !String.IsEqual(Container.SortMethod,$LOCALIZE[38018])</visible>
-            <visible>!String.Contains(Container.FolderPath,plugin://plugin.video.youtube)</visible>
-        </control>
-        <control type="label">
             <right>85</right>
             <width>500</width>
             <aligny>center</aligny>
@@ -1141,7 +1128,6 @@
             <textcolor>Dark1</textcolor>
             <selectedcolor>Dark1</selectedcolor>
             <label>$INFO[ListItem.Label2]</label>
-            <visible>String.Contains(Container.FolderPath,plugin://plugin.video.youtube)</visible>
             <visible>!Container.Content(songs)</visible>
             <animation effect="slide" start="0" end="60" time="0" condition="Skin.HasSetting(hide.markers)">Conditional</animation>
         </control>
@@ -1155,7 +1141,6 @@
             <selectedcolor>WatchedIconsList</selectedcolor>
             <font>SymbolList</font>
             <label>$VAR[WatchedLabelList]</label>
-            <visible>String.Contains(Container.FolderPath,plugin://plugin.video.youtube)</visible>
             <visible>!Container.Content(songs)</visible>
             <visible>!ListItem.IsFolder</visible>
         </control>
@@ -1266,19 +1251,6 @@
             <visible>!String.IsEqual(ListItem.Label,..) + String.IsEqual(Container.SortMethod,$LOCALIZE[38018])</visible>
         </control>
         <control type="label">
-            <right>30</right>
-            <width>500</width>
-            <aligny>center</aligny>
-            <height>64</height>
-            <align>right</align>
-            <font>SmallNavi</font>
-            <textcolor>Light1</textcolor>
-            <selectedcolor>Light1</selectedcolor>
-            <label>$INFO[ListItem.Label2]</label>
-            <visible>!Container.Content(songs) + !String.IsEqual(Container.SortMethod,$LOCALIZE[38018])</visible>
-            <visible>!String.Contains(Container.FolderPath,plugin://plugin.video.youtube)</visible>
-        </control>
-        <control type="label">
             <right>85</right>
             <width>500</width>
             <aligny>center</aligny>
@@ -1288,7 +1260,6 @@
             <textcolor>Light1</textcolor>
             <selectedcolor>Light1</selectedcolor>
             <label>$INFO[ListItem.Label2]</label>
-            <visible>String.Contains(Container.FolderPath,plugin://plugin.video.youtube)</visible>
             <visible>!Container.Content(songs)</visible>
             <animation effect="slide" start="0" end="60" time="0" condition="Skin.HasSetting(hide.markers)">Conditional</animation>
         </control>
@@ -1302,7 +1273,6 @@
             <selectedcolor>WatchedIconsListFocus</selectedcolor>
             <font>SymbolList</font>
             <label>$VAR[WatchedLabelList]</label>
-            <visible>String.Contains(Container.FolderPath,plugin://plugin.video.youtube)</visible>
             <visible>!Container.Content(songs)</visible>
             <visible>!ListItem.IsFolder</visible>
         </control>
